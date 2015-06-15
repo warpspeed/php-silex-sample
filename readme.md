@@ -74,8 +74,8 @@ nano .env.php
 <?php
 
 	$_ENV['DB_NAME'] = 'tasks_db';
-	$_ENV['DB_USER'] = 'vagrant';
-	$_ENV['DB_PASS'] = 'vagrant';
+	$_ENV['DB_USER'] = 'tasks_user';
+	$_ENV['DB_PASS'] = 'password123';
 	$_ENV['DB_HOST'] = 'localhost';
 
 	return $_ENV;
