@@ -63,14 +63,14 @@ This Silex sample project uses the PHP Data Object (PDO) to read from and write 
 
 # cd to your project's root directory
 # and copy the contents of the .env.template.php
-# file into a new file title .env.php
+# file into a new file titled .env.php
 cd ~/Sites/warpspeed-silex.dev
-cp .env.template.php .env
+cp .env.template.php .env.php
 
 # enter the requisite fields
-nano .env
+nano .env.php
 
-# the .env file should resemble the following when complete:
+# the .env.php file should resemble the following when complete:
 <?php
 
 	$_ENV['DB_NAME'] = 'tasks_db';
@@ -85,7 +85,7 @@ nano .env
 
 ## Install Silex and Run Migrations
 
-Silex ulilizes Composer to manages its dependencies. To intall the required libraries listed in the `composer.json` file, run the following commands:
+Silex ulilizes Composer to manage its dependencies. To install the required libraries listed in the `composer.json` file, run the following commands:
 
 ```
 # RUN THESE COMMANDS FROM YOUR VM
@@ -101,7 +101,7 @@ composer install
 mysql -u tasks_user -p tasks_db < sql/create_tasks_table.sql
 ```
 
-The SQL statement used to generate the `tasks` table is located from your local machine at `~/Sites/warpspeed-silex.dev/sql/create_tasks_table.sql`.
+The SQL statement used to generate the `tasks` table is located in `~/Sites/warpspeed-silex.dev/sql/`.
 
 ## Add a Hosts File Entry
 
@@ -119,7 +119,7 @@ sudo nano /etc/hosts
 # exit and save
 ```
 
-Now, whenever you access "warpspeed-lumen.dev" in the browser, you will be directed to your Lumen site within your VM.
+Now, whenever you access "warpspeed-silex.dev" in the browser, you will be directed to your Silex site within your VM.
 
 ## Restart your Site and Celebrate
 Finally, we need to reload the site configuration to finalize and effectuate our changes. To do so, perform the following:
