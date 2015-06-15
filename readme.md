@@ -28,13 +28,13 @@ The sample project uses a MySQL database. This can easily be swapped with an SQL
 ```
 # RUN THESE COMMANDS FROM YOUR LOCAL MACHINE
 
-   # cd to your warpspeed-vagrant directory
-   # and ssh into your VM
-   cd ~/warpspeed-vagrant
-   vagrant ssh
+# cd to your warpspeed-vagrant directory
+# and ssh into your VM
+cd ~/warpspeed-vagrant
+vagrant ssh
 
-   # then, run the db creation command
-   warpspeed mysql:db tasks_db tasks_user password123
+# then, run the db creation command
+warpspeed mysql:db tasks_db tasks_user password123
 ```
 
 This will create a database named "tasks_db" along with a user, "tasks_user", that has access via the password "password123". Feel free to change the values to suit your needs (hint: perhaps choosing a better password would be wise).
@@ -45,14 +45,14 @@ We need to create the appropriate server configuration files to run the site. To
 
 ```
 # if you aren't already in your VM then...
-   # cd to your warpspeed-vagrant directory
-   # and ssh into your VM
-   cd ~/warpspeed-vagrant
-   vagrant ssh
+# cd to your warpspeed-vagrant directory
+# and ssh into your VM
+cd ~/warpspeed-vagrant
+vagrant ssh
 
-   # then, run the site creation command
-   # notice that --force is used because the site directory already exists
-   warpspeed site:create php warpspeed-silex.dev --force
+# then, run the site creation command
+# notice that --force is used because the site directory already exists
+warpspeed site:create php warpspeed-silex.dev --force
 ```
 ## Configure your .env.php file
 
@@ -140,11 +140,11 @@ If you have issues and need to troubleshoot, view the NGINX error log for helpfu
 ```
 # RUN THESE COMMANDS FROM YOUR VM
 
- # open the NGINX error log
- sudo nano /var/log/nginx/error.log
+# open the NGINX error log
+sudo nano /var/log/nginx/error.log
 
- # ...or keep an open tab of the NGINX error log
- sudo tail -f /var/log/nginx/error.log
+# ...or keep an open tab of the NGINX error log
+sudo tail -f /var/log/nginx/error.log
 ```
 
 # License
