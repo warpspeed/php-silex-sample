@@ -13,19 +13,14 @@
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/views'));
 
-    $app->get('/', function() use ($app, $dbc) {
 
+    $app->get('/', function() use ($app, $dbc) {
         $query = 'SELECT * FROM ' . TABLE . ' ORDER BY id DESC';
         $tasks = $dbc->query($query);
 
         return $app['twig']->render('view.twig', ['tasks'=> $tasks]);
 
     });
-
-    $app->get('/env', function() use ($app, $dbc) {
-        return var_dump($_ENV);
-    });
-
 
     $app->post('/tasks', function() use ($app, $dbc) {
 
@@ -44,6 +39,7 @@
 
         return $app->redirect('/');
     });
+
 
     $app->post('/tasks/{id}/toggle-complete', function($id) use ($app, $dbc) {
 
@@ -70,9 +66,7 @@
 
     $app->post('/tasks/clear-complete', function() use ($app, $dbc) {
 
-        $stmt             = $dbc->query('SELECT id
-                                         FROM ' . TABLE .
-                                         ' WHERE is_complete = TRUE');
+        $stmt = $dbc->query('SELECT id FROM ' . TABLE .' WHERE is_complete = TRUE');
 
         $tasksToBeRemoved = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
