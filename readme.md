@@ -40,7 +40,6 @@ warpspeed mysql:db tasks_db tasks_user password123
 # MySQL admin password, enter 'vagrant'
 
 Enter password: vagrant
-
 ```
 
 This will create a database named "tasks_db" along with a user, "tasks_user", that has access via the password "password123". Feel free to change the values to suit your needs (hint: perhaps choosing a better password would be wise).

@@ -14,7 +14,6 @@
     'twig.path' => __DIR__ . '/views'));
 
     $app->get('/', function() use ($app, $dbc) {
-
         $query = 'SELECT * FROM ' . TABLE . ' ORDER BY id DESC';
         $tasks = $dbc->query($query);
 
