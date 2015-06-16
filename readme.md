@@ -164,8 +164,6 @@ sudo nano /var/log/php/warpspeed-silex.dev-error.log
 
 # ...or keep an open tab of the site's error log
 sudo tail -f /var/log/php/warpspeed-silex.dev-error.log
-
-
 ```
 
 # License
