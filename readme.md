@@ -142,7 +142,7 @@ Now you can access http://warpspeed-silex.dev on your local machine to view the 
 
 ## Troubleshooting
 
-If you have issues and need to troubleshoot, view the NGINX error log for helpful clues.
+If you have issues, chiefly a 500 Status Code Internal Error, and need to troubleshoot, view the NGINX error log for helpful clues.
 
 ```
 # RUN THESE COMMANDS FROM YOUR VM
@@ -152,6 +152,20 @@ sudo nano /var/log/nginx/error.log
 
 # ...or keep an open tab of the NGINX error log
 sudo tail -f /var/log/nginx/error.log
+```
+
+If the error appears unique to PHP, view the `warpspeed-silex.dev-error.log`. To do so, run the following commands: 
+
+```
+# RUN THESE COMMANDS FROM YOUR VM
+
+# open the site's error log
+sudo nano /var/log/php/warpspeed-silex.dev-error.log
+
+# ...or keep an open tab of the site's error log
+sudo tail -f /var/log/php/warpspeed-silex.dev-error.log
+
+
 ```
 
 # License
