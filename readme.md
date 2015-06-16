@@ -105,6 +105,7 @@ composer install
 # enter your tasks_user password when prompted
 # if following the guide exactly, 'password123'
 mysql -u tasks_user -p tasks_db < sql/create_tasks_table.sql
+Enter password: password123
 ```
 
 The SQL statement used to generate the `tasks` table is located in `~/Sites/warpspeed-silex.dev/sql/`.
