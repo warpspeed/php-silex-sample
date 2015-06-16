@@ -112,7 +112,7 @@ The SQL statement used to generate the `tasks` table is located in `~/Sites/warp
 
 ## Add a Hosts File Entry
 
-To access your new Lumen site, you will need to add an entry to your hosts file on your local machine (not your VM). To do so, perform the following:
+To access your new Silex site, you will need to add an entry to your hosts file on your local machine (not your VM). To do so, perform the following:
 
 ```
 # RUN THESE COMMANDS FROM YOUR LOCAL MACHINE
