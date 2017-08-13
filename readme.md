@@ -124,6 +124,12 @@ To access your new Silex site, you will need to add an entry to your hosts file 
 # open a terminal and run the following command (for Mac)
 sudo nano /etc/hosts
 
+# using git bash or similar, must be run as admin (windows)
+notepad /c/Windows/System32/Drivers/etc/hosts
+
+# using command prompt, must be run as admin (windows)
+notepad C:\Windows\System32\Drivers\etc\hosts
+
 # add this line to the end of the file
 192.168.88.10 warpspeed-silex.dev
 
