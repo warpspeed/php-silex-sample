@@ -82,13 +82,12 @@ nano .env.php
 # the .env.php file should resemble the following when complete:
 <?php
 
-   return array(
-   'DB_NAME' => 'tasks_db',
-   'DB_USER' => 'vagrant',
-   'DB_PASS' => 'vagrant',
-   'DB_HOST' => 'localhost');
-
-?>
+return [
+    'DB_NAME' => 'tasks_db',
+    'DB_USER' => 'tasks_user',
+    'DB_PASS' => 'password123',
+    'DB_HOST' => 'localhost'
+];
 
 # exit and save
 ```

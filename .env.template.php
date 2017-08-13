@@ -1,10 +1,8 @@
 <?php
 
-	return array(
+return [
 	'DB_NAME' => 'tasks_db',
-	'DB_USER' => 'vagrant',
-	'DB_PASS' => 'vagrant',
-	'DB_HOST' => 'localhost');
-
-?>
-
+	'DB_USER' => '',
+	'DB_PASS' => '',
+	'DB_HOST' => 'localhost'
+];
